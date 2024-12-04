@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilo geral */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #0073e6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky; /* Mantém o header fixo */
+  top: 0;
+  z-index: 1000;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.app-footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky; /* Mantém o footer fixo */
+  bottom: 0;
+}
+
+/* src/App.css */
+.app-container {
+  display: flex;
+}
+
+.app-content {
+  margin-left: 50px; /* Ajuste para a largura do Sidebar */
+  width: calc(100% - 250px); /* Garante que o conteúdo ocupe o restante da tela */
+}
+
+.app-header, .app-footer {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Formlurio */
+/* Estilo básico para a tela de Enviar Comprovante */
+/* Estilo básico para a tela de Enviar Comprovante */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+form {
+  margin-right: 50px ; /* Borda à direita com a cor verde */
+  padding-right: 20px; /* Um pouco de espaçamento à direita */
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Estilo para o botão "Aprovar" */
+.button-aprovar {
+  background-color: #4caf50; /* Cor de fundo verde */
+  color: white; /* Cor do texto em branco */
+  border: 1px solid #388e3c; /* Borda verde escura */
+  cursor: pointer; /* Indica que o botão é clicável */
+}
+
+.button-aprovar:hover {
+  background-color: #388e3c; /* Cor mais escura quando o mouse passa por cima */
+}
+
+/* Estilo para o botão "Rejeitar" */
+.button-rejeitar {
+  background-color: #ff4d4d; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto em branco */
+  border: 1px solid #cc0000; /* Borda vermelha */
+  cursor: pointer; /* Indica que o botão é clicável */
+}
+
+
+.button-rejeitar:hover {
+  background-color: #cc0000; /* Cor mais escura quando o mouse passa por cima */
+}
+
+/* Estilo para o botão desativado */
+.button-disabled {
+  background-color: #d3d3d3; /* Cor de fundo cinza */
+  color: #a9a9a9; /* Cor do texto cinza claro */
+  cursor: not-allowed; /* Indica que o botão não é clicável */
+  border: 1px solid #a9a9a9; /* Cor da borda */
+}
+
+.button-disabled:hover {
+  background-color: #b1b1b1; /* Cor mais escura quando o mouse passa por cima */
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.react-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.react-table th,
+.react-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.react-table th {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.react-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.react-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.react-table tr:hover {
+  background-color: #ddd;
+}
